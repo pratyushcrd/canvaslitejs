@@ -27,7 +27,7 @@ gulp.task('watch::js', function () {
 });
 
 gulp.task('webserver', function() {
-  gulp.src('test/')
+  gulp.src('')
     .pipe(webserver({
       livereload: true,
       directoryListing: false,
