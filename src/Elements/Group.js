@@ -1,9 +1,4 @@
 /**
-* Manage all the group elements belongs to
-*/
-let BasicElement = require('./BasicElement.js');
-
-/**
 * Manage groups that elements belong to
 * extends BasicElement
 */
@@ -117,5 +112,3 @@ class Group extends BasicElement {
     super.erase();
   }
 }
-
-module.exports = Group;

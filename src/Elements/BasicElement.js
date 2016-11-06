@@ -1,4 +1,3 @@
-let Group = require('./Group.js');
 /**
 * Basic Element class
 * Groups and other Elements inherits this
@@ -96,5 +95,3 @@ class BasicElement {
     }
   }
 }
-
-module.exports = BasicElement;

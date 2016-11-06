@@ -2,6 +2,7 @@
 import gulp from 'gulp';
 import del from 'del';
 // import babel from 'gulp-babel';
+import concat from 'gulp-concat';
 import mocha from 'gulp-mocha';
 import through from 'through2';
 import named from 'vinyl-named';
@@ -66,15 +67,8 @@ del([PATH.allDistJs])
 );
 
 gulp.task('build-es5', ['clean:dist'], () =>
-  gulp.src(PATH.clientEntryPoint)
-  .pipe(webpack(webpackEs5Config))
-  .pipe(gulp.dest('dist'))
-);
-
-gulp.task('build', ['build-es5'], () =>
-  gulp.src(PATH.clientEntryPoint)
-  .pipe(named())
-  .pipe(webpack(webpackEs6Config))
+  gulp.src(PATH.allSrcJs)
+  .pipe(concat('canvaslite-es6.min.js'))
   .pipe(sourcemaps.init({ 'loadMaps': true }))
   .pipe(through.obj(function (file, enc, cb) {
     var isSourceMap = /\.map$/.test(file.path);
@@ -88,6 +82,27 @@ gulp.task('build', ['build-es5'], () =>
     'lang': 'javascript',
     'mode': 'minify'
   }))
+  .pipe(gulp.dest('dist'))
+);
+
+gulp.task('build', () =>
+  gulp.src(PATH.allSrcJs)
+  .pipe(concat('canvaslite-es6.min.js'))
+  .pipe(sourcemaps.init({ 'loadMaps': true }))
+  .pipe(through.obj(function (file, enc, cb) {
+    var isSourceMap = /\.map$/.test(file.path);
+    if (!isSourceMap) {
+      this.push(file);
+    }
+    cb();
+  }))
+  .pipe(sourcemaps.write())
+  /*
+  .pipe(prettydiff({
+    'lang': 'javascript',
+    'mode': 'minify'
+  }))
+  */
   .pipe(gulp.dest('dist'))
 );
 
