@@ -1,0 +1,20 @@
+{
+    "extends": "standard",
+    "plugins": [
+        "standard",
+        "promise"
+    ],
+    "globals":{
+      "define": true
+    },
+    "rules": {
+      "semi": [
+        "error",
+        "always"
+      ],
+      "one-var": [
+        "error",
+        "always"
+      ]
+    }
+}
