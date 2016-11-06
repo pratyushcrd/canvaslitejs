@@ -10,8 +10,8 @@
     "test": "gulp"
   },
   "repository": {
-    "type": "git",
-    "url": ""
+    "url": "git@github.com:pratyushcrd/canvaslitejs.git",
+    "type": "git"
   },
   "keywords": [
     "canvas",
