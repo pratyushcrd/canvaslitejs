@@ -6,9 +6,10 @@
     ],
     "globals":{
       "define": true,
-      'Group' : true,
-      'BasicElement' : true,
-      'Element' : true
+      "Group" : true,
+      "BasicElement" : true,
+      "Element" : true,
+      "Painter" : true
     },
     "rules": {
       "semi": [
