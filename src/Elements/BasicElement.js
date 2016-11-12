@@ -13,6 +13,8 @@ class BasicElement {
     if (!canvas) {
       throw Error('canvas not provided');
     }
+    // Element specific configuration object
+    this.elConfig = {};
     this.canvas = canvas;
     this.config = {
       type: 'basicEl',
@@ -112,6 +114,47 @@ class BasicElement {
       }
     }
   }
+  /**
+  * change attributes of element,
+  * takes key, value pair or
+  * config object
+  */
+  attr (key, value) {
+    var config = {},
+      change = false,
+      k = '',
+      v = '';
+    // If no arguments return current
+    if (!key && !value) {
+      return this.elConfig;
+    }
+    // No configurations in group
+    if (!(this instanceof BasicElement) || this instanceof Group) {
+      return this;
+    } else if (typeof key === 'string' && (typeof value === 'string' || typeof value === 'number')) {
+      config[key] = value;
+    } else if (typeof key === 'object') {
+      config = key;
+    } else if (key && !value) {
+      return this.elConfig[key];
+    } else {
+      return this;
+    }
+    for (k in config) {
+      if (this.elConfig[k] !== config[k]) {
+        this.elConfig[k] = config[k];
+        change = true;
+      }
+    }
+    if (change) {
+      this.__notifyChange__();
+    }
+    return this;
+  }
+  /**
+  * Base draw method; If validations passed element
+  * will be actually drawn
+  */
   draw (context) {
     // check if context is proper
     if (!context && !(context instanceof window.CanvasRenderingContext2D)) {

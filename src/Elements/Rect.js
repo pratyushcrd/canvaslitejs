@@ -12,6 +12,12 @@ class Rect extends BasicElement {
   /**
   * Function to describe how element will be drawn
   */
+  __attr__ (config) {
+
+  }
+  /**
+  * Function to describe how element will be drawn
+  */
   __draw__ (context) {
     let i,
       rect = this,
