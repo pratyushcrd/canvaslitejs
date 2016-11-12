@@ -11,7 +11,22 @@
     <script src="dist/canvaslite-es6.min.js" charset="utf-8"></script>
     <!-- <script src="dist/fcts-ext-daterange-es6.min.js" charset="utf-8"></script> -->
     <script>
-    var paper = new CanvasLite('canvas');
+    var paper = new CanvasLite('canvas', 900, 900);
+    var r1 = paper.rect(150,230,100,100,"#9ae","#34f");
+    var r2 = paper.rect(50,0,100,100,"#a9e","#3f4");
+    var r3 = paper.rect(100,100,200,100,"#ff5690","#345");
+    var r4 = paper.rect(0, 0,200,100,"#f0e4a8","#345");
+    var r5 = paper.rect(30,100,200,100,"#6e9a4c","#345");
+    var r6 = paper.rect(100,30,200,100,"#9bc7ae","#345");
+    var r7 = paper.rect(500,500,200,100,"#901e2s","#345");
+    var r8 = paper.rect(230,320,200,100,"#47938a","#345");
+    var r9 = paper.rect(300,100,200,100,"#2356a4","#345");
+    var r10 = paper.rect(40,400,200,100,"#9ea78c","#345");
+    var r11 = paper.rect(120,500,200,100,"#249e45","#345");
+    var r12 = paper.rect(10,210,200,100,"#129845","#345");
+    var r13 = paper.rect(310,310,200,100,"#98ae12","#345");
+    var g1 = paper.group();
+    g1.add([r1, r2, r4, r8, r7, r12, r10]);
     </script>
   </body>
 </html>

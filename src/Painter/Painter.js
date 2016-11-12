@@ -46,6 +46,6 @@ class Painter {
   // Paint all visible items;
   paintAll () {
     this.clearCanvas();
-    this.canvas.rootGroup.__draw__(this.canvas.context);
+    this.canvas.rootGroup.draw(this.canvas.context);
   }
 }

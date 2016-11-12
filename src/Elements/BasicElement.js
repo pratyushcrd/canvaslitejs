@@ -112,14 +112,23 @@ class BasicElement {
       }
     }
   }
+  draw (context) {
+    // check if context is proper
+    if (!context && !(context instanceof window.CanvasRenderingContext2D)) {
+      throw Error('Incorrect context');
+    }
+    // do not draw if invisible
+    if (!this.config.visible) {
+      return;
+    } else {
+      this.__draw__(context);
+    }
+  }
   /**
   * @private
   * Abstract draw method
   */
   __draw__ (context) {
-    // Drawmethod to be overridden by every element
-    if (!context && !(context instanceof window.CanvasRenderingContext2D)) {
-      throw Error('Incorrect context');
-    }
+    // Draw method to be overridden by every element
   }
 }

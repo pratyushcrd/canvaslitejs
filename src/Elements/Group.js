@@ -122,14 +122,10 @@ class Group extends BasicElement {
     let members = this.__members__,
       i = 0,
       ii = members.length;
-    // do not draw if invisible
-    if (!this.config.visible) {
-      return;
-    }
     // Iterating over each member;
     // commanding to draw
     for (; i < ii; ++i) {
-      members[i].__draw__(context);
+      members[i].draw(context);
     }
   }
 }

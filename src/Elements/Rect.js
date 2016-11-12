@@ -16,12 +16,6 @@ class Rect extends BasicElement {
     let i,
       rect = this,
       config = rect.elConfig;
-    // If no context dont draw
-    super.__draw__(context);
-    // do not draw if invisible
-    if (!this.config.visible) {
-      return;
-    }
     context.beginPath();
     context.rect(config.x, config.y, config.width, config.height);
     context.fillStyle = config.fill || libDefaults.fill;
