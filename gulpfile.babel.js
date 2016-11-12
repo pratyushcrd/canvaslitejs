@@ -5,16 +5,17 @@ import del from 'del';
 import concat from 'gulp-concat';
 import mocha from 'gulp-mocha';
 import through from 'through2';
-import named from 'vinyl-named';
+// import named from 'vinyl-named';
 import eslint from 'gulp-eslint';
 // import uglify from 'gulp-uglify';
 import { exec } from 'child_process';
 import istanbul from 'gulp-istanbul';
-import webpack from 'webpack-stream';
+// import webpack from 'webpack-stream';
 import prettydiff from 'gulp-prettydiff';
 import sourcemaps from 'gulp-sourcemaps';
-import webpackEs5Config from './webpack-es5.config.babel.js';
-import webpackEs6Config from './webpack-es6.config.babel.js';
+import iife from 'gulp-iife';
+// import webpackEs5Config from './webpack-es5.config.babel.js';
+// import webpackEs6Config from './webpack-es6.config.babel.js';
 
 const PATH = {
   allDistJs: 'dist/**/*',
@@ -85,9 +86,15 @@ gulp.task('build-es5', ['clean:dist'], () =>
   .pipe(gulp.dest('dist'))
 );
 
-gulp.task('build', () =>
+gulp.task('build', ['clean:dist'], () =>
   gulp.src(PATH.allSrcJs)
   .pipe(concat('canvaslite-es6.min.js'))
+  .pipe(iife({
+    useStrict: true,
+    prependSemicolon: false,
+    params: ['window', 'document', 'undefined'],
+    args: ['window', 'document']
+  }))
   .pipe(sourcemaps.init({ 'loadMaps': true }))
   .pipe(through.obj(function (file, enc, cb) {
     var isSourceMap = /\.map$/.test(file.path);

@@ -18,6 +18,7 @@ class BasicElement {
       type: 'basicEl',
       visible: true
     };
+    this.isRoot = !!isRoot;
     // Initially assign root group if
     // group not provided
     if (group) {
@@ -30,6 +31,8 @@ class BasicElement {
         canvas.rootGroup.add(this);
       }
     }
+    // Notify element added
+    this.__notifyChange__();
   }
   /**
   * Assign new group or
@@ -38,13 +41,17 @@ class BasicElement {
   group (group) {
     // If group is provided assign, otherwise
     // return current group
+    var res;
     if (group) {
       this.group.remove(this);
       this.group = group;
-      return this;
+      res = this;
     } else {
-      return this.group;
+      res = this.group;
     }
+    // Notify group changed
+    this.__notifyChange__();
+    return res;
   }
   /**
   * Erase current element
@@ -58,6 +65,7 @@ class BasicElement {
         delete this[key];
       }
     }
+    // Notify element erased
     this.__notifyChange__();
   }
   /**
@@ -92,8 +100,9 @@ class BasicElement {
   * Behave when property of element is changed
   */
   __notifyChange__ () {
-    if (this.config.visible) {
+    if (this.config && this.config.visible) {
       // Notify change only if visible
+      // and if element exists
     }
   }
 }

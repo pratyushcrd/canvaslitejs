@@ -1,14 +1,10 @@
-let doc = document;
 /**
 * Constructor function to initialize CanvasLite
 */
 class CanvasLite {
   constructor (id) {
-    this.rootEl = doc.getElementById(id);
-    this.canvasEl = doc.createElement('canvas');
-    this.rootEl.appendChild(this.canvasEl);
-    this.context = this.canvasEl.getContext('2d');
     this.rootGroup = new Group(this, null, true);
+    this.brush = new Painter(id, this.rootGroup);
   }
   element () {
     return new BasicElement(this);
@@ -17,3 +13,5 @@ class CanvasLite {
     return new Group(this);
   }
 }
+// Exposing CanvasLite to global space
+window.CanvasLite = CanvasLite;

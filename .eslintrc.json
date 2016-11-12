@@ -5,7 +5,11 @@
         "promise"
     ],
     "globals":{
-      "define": true
+      "define": true,
+      "Group" : true,
+      "BasicElement" : true,
+      "Element" : true,
+      "Painter" : true
     },
     "rules": {
       "semi": [
@@ -15,6 +19,7 @@
       "one-var": [
         "error",
         "always"
-      ]
+      ],
+      "no-unused-vars": ["warn"]
     }
 }
