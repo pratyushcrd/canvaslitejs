@@ -174,4 +174,16 @@ class BasicElement {
   __draw__ (context) {
     // Draw method to be overridden by every element
   }
+  /**
+  * Push element to last in the group
+  */
+  sendBack () {
+    this.group().__sendToBack__(this);
+  }
+  /**
+  * Push element to first in the group
+  */
+  bringFront () {
+    this.group().__sendToFront__(this);
+  }
 }

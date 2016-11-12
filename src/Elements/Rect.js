@@ -26,6 +26,7 @@ class Rect extends BasicElement {
     context.rect(config.x, config.y, config.width, config.height);
     context.fillStyle = config.fill || libDefaults.fill;
     context.strokeStyle = config.stroke || libDefaults.stroke;
+    context.lineWidth = config.strokeWidth || libDefaults.strokeWidth;
     context.stroke();
     context.fill();
   }

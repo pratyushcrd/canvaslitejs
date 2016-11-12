@@ -14,7 +14,7 @@ class Group extends BasicElement {
   /**
   * Check if is proper element or group
   */
-  __checkEl__ (element) {
+  __checkIfEl__ (element) {
     if (!(element instanceof BasicElement)) {
       throw Error('Only elements or groups can be added');
     }
@@ -40,7 +40,7 @@ class Group extends BasicElement {
       }
       return this;
     }
-    this.__checkEl__(element);
+    this.__checkIfEl__(element);
     // Remove previous group;
     if (element.group()) {
       element.group().remove(element);
@@ -71,7 +71,7 @@ class Group extends BasicElement {
       i = 0,
       ii = members.length,
       j = 0;
-    this.__checkEl__(element);
+    this.__checkIfEl__(element);
     for (; i < ii; ++i) {
       if (members[i] === element) {
         break;
@@ -126,6 +126,39 @@ class Group extends BasicElement {
     // commanding to draw
     for (; i < ii; ++i) {
       members[i].draw(context);
+    }
+  }
+  /**
+  * Push element to last in the group
+  */
+  __sendToBack__ (el) {
+    let members = this.__members__,
+      i = 0,
+      pos = -1;
+    this.__checkIfEl__(el);
+    pos = members.indexOf(el);
+    if (pos !== -1) {
+      for (i = pos - 1; i >= 0; --i) {
+        members[i + 1] = members[i];
+      }
+      members[0] = el;
+    }
+  }
+  /**
+  * Push element to last in the group
+  */
+  __sendToFront__ (el) {
+    let members = this.__members__,
+      i = 0,
+      ii = members.length,
+      pos = -1;
+    this.__checkIfEl__(el);
+    pos = members.indexOf(el);
+    if (pos !== -1) {
+      for (i = pos + 1; i < ii; ++i) {
+        members[i - 1] = members[i];
+      }
+      members[ii - 1] = el;
     }
   }
 }

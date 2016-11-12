@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FCTS Date Range Extension</title>
+    <title>CanvasLite Js</title>
   </head>
   <body>
     <div id="canvas"></div>
     <script src="dist/canvaslite-es6.min.js" charset="utf-8"></script>
     <!-- <script src="dist/fcts-ext-daterange-es6.min.js" charset="utf-8"></script> -->
     <script>
+    "use strict";
     var paper = new CanvasLite('canvas', 900, 900);
     var r1 = paper.rect(150,230,100,100,"#9ae","#34f");
     var r2 = paper.rect(50,0,100,100,"#a9e","#3f4");
@@ -26,7 +27,96 @@
     var r12 = paper.rect(10,210,200,100,"#129845","#345");
     var r13 = paper.rect(310,310,200,100,"#98ae12","#345");
     var g1 = paper.group();
-    g1.add([r1, r2, r4, r8, r7, r12, r10]);
+    g1.add([r4, r3, r13]);
+
+    ((function(){
+      var x = 200,
+        y = 0,
+        height = 500,
+        width = 300,
+        step = 3,
+        goingDown = true;
+        r3.attr({x, y, width, height});
+      function animateR3() {
+        if (goingDown) {
+          y += step;
+          height -= step;;
+          if (height <= 0) {
+            goingDown = false;
+          }
+        } else {
+          y -= step;
+          height += step;
+          if (height >= 500) {
+            goingDown = true;
+          }
+        }
+        r3.attr({x, y, width, height});
+        if (Math.random() < 0.02) {
+          r3.bringFront();
+        } else if (Math.random() < 0.05) {
+          r3.sendBack();
+        }
+        requestAnimationFrame(animateR3);
+      };
+      animateR3();
+    })());
+    ((function(){
+      var x = 0,
+        y = 100,
+        height = 200,
+        width = 500,
+        step = 3,
+        goingRight = false;
+        r2.attr({x, y, width, height});
+      function animateR3() {
+        if (goingRight) {
+          width += step;
+          if (width >= 500) {
+            goingRight = false;
+          }
+        } else {
+          width -= step;
+          if (width <= 0) {
+            goingRight = true;
+          }
+        }
+        r2.attr({x, y, width, height});
+        requestAnimationFrame(animateR3);
+      };
+      animateR3();
+    })());
+    ((function(){
+      var x = 400,
+        y = 200,
+        height = 100,
+        width = 100,
+        step = 3,
+        goingRight = false;
+        r4.attr({x, y, width, height});
+      function animateR3() {
+        if (goingRight) {
+          width += step;
+          x -= step / 2;
+          y -= step / 2;
+          height += step;
+          if (width >= 400) {
+            goingRight = false;
+          }
+        } else {
+          width -= step;
+          x += step / 2;
+          y += step / 2;
+          height -= step;
+          if (width <= 50) {
+            goingRight = true;
+          }
+        }
+        r4.attr({x, y, width, height});
+        requestAnimationFrame(animateR3);
+      };
+      animateR3();
+    })());
     </script>
   </body>
 </html>

@@ -6,7 +6,8 @@ let libDefaults = {
     canvasHeight: 300,
     canvasWidth: 500,
     fill: '#fff',
-    stroke: '#000'
+    stroke: '#000',
+    strokeWidth: 4
   },
   userDefaults = {
   };
