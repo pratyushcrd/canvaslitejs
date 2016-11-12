@@ -9,7 +9,7 @@ class BasicElement {
   * assign the group, store canvas
   * set type initially to 'basicEl'
   */
-  constructor (canvas, group, isRoot) {
+  constructor (canvas, group) {
     if (!canvas) {
       throw Error('canvas not provided');
     }
@@ -18,7 +18,6 @@ class BasicElement {
       type: 'basicEl',
       visible: true
     };
-    this.isRoot = !!isRoot;
     // Initially assign root group if
     // group not provided
     if (group) {
@@ -27,12 +26,18 @@ class BasicElement {
       }
       group.add(this);
     } else {
-      if (!isRoot) {
+      if (canvas.rootGroup) {
         canvas.rootGroup.add(this);
+      } else {
+        this.isRoot = true;
       }
     }
     // Notify element added
     this.__notifyChange__();
+  }
+  is (type) {
+    type += '';
+    return this.config.type.toLowerCase() === type.toLowerCase();
   }
   /**
   * Assign new group or
@@ -103,6 +108,16 @@ class BasicElement {
     if (this.config && this.config.visible) {
       // Notify change only if visible
       // and if element exists
+    }
+  }
+  /**
+  * @private
+  * Abstract draw method
+  */
+  __draw__ (context) {
+    // Drawmethod to be overridden by every element
+    if (!context && !(context instanceof window.CanvasRenderingContext2D)) {
+      throw Error('Incorrect context');
     }
   }
 }

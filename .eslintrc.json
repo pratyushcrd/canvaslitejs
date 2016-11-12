@@ -9,7 +9,10 @@
       "Group" : true,
       "BasicElement" : true,
       "Element" : true,
-      "Painter" : true
+      "Painter" : true,
+      "Line" : true,
+      "Rect" : true,
+      "defaults": true
     },
     "rules": {
       "semi": [
