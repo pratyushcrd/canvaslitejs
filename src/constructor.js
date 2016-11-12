@@ -8,9 +8,10 @@ class CanvasLite {
     this.canvasEl = doc.createElement('canvas');
     this.rootEl.appendChild(this.canvasEl);
     this.context = this.canvasEl.getContext('2d');
+    this.rootGroup = new Group(this, null, true);
   }
   element () {
-    return new Element(this);
+    return new BasicElement(this);
   }
   group () {
     return new Group(this);

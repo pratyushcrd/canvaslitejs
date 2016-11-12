@@ -3,8 +3,8 @@
 * extends BasicElement
 */
 class Group extends BasicElement {
-  constructor (canvas, group) {
-    super(canvas, group);
+  constructor (canvas, group, isRoot) {
+    super(canvas, group, isRoot);
     // Set type to group
     this.config.type = 'group';
     this.__members__ = [];

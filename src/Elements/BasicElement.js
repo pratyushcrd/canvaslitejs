@@ -9,7 +9,7 @@ class BasicElement {
   * assign the group, store canvas
   * set type initially to 'basicEl'
   */
-  constructor (canvas, group) {
+  constructor (canvas, group, isRoot) {
     if (!canvas) {
       throw Error('canvas not provided');
     }
@@ -24,9 +24,11 @@ class BasicElement {
       if (!(group instanceof Group)) {
         throw Error('Not a proper Group');
       }
-      this.group = group;
+      group.add(this);
     } else {
-      this.group = canvas.rootGroup;
+      if (!isRoot) {
+        canvas.rootGroup.add(this);
+      }
     }
   }
   /**
