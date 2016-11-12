@@ -32,8 +32,6 @@ class BasicElement {
         this.isRoot = true;
       }
     }
-    // Notify element added
-    this.__notifyChange__();
   }
   is (type) {
     type += '';
@@ -48,15 +46,14 @@ class BasicElement {
     // return current group
     var res;
     if (group) {
-      this.group.remove(this);
-      this.group = group;
-      res = this;
+      this.group().remove(this);
+      group.add(this);
+      // Notify group changed
+      this.__notifyChange__();
+      return res;
     } else {
-      res = this.group;
+      return this.__group__;
     }
-    // Notify group changed
-    this.__notifyChange__();
-    return res;
   }
   /**
   * Erase current element
@@ -79,7 +76,7 @@ class BasicElement {
   hide () {
     if (this.config.visible) {
       this.config.visible = false;
-      this.__notifyChange__();
+      this.__notifyChange__(true);
     }
     return this;
   }
@@ -104,10 +101,15 @@ class BasicElement {
   /**
   * Behave when property of element is changed
   */
-  __notifyChange__ () {
-    if (this.config && this.config.visible) {
+  __notifyChange__ (forceNotify) {
+    if (this.config && this.config.visible || forceNotify) {
       // Notify change only if visible
       // and if element exists
+      if (!this.isRoot) {
+        this.group().__notifyChange__();
+      } else if (this.canvas.brush) {
+        this.canvas.brush.paintAll();
+      }
     }
   }
   /**

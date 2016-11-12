@@ -12,7 +12,8 @@
       "Painter" : true,
       "Line" : true,
       "Rect" : true,
-      "defaults": true
+      "libDefaults": true,
+      "userDefaults": true
     },
     "rules": {
       "semi": [

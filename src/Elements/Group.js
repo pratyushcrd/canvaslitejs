@@ -8,6 +8,8 @@ class Group extends BasicElement {
     // Set type to group
     this.config.type = 'group';
     this.__members__ = [];
+    // Notify element added
+    this.__notifyChange__();
   }
   /**
   * Check if is proper element or group
@@ -40,11 +42,11 @@ class Group extends BasicElement {
     }
     this.__checkEl__(element);
     // Remove previous group;
-    if (element.group.remove) {
-      element.group.remove(element);
+    if (element.group()) {
+      element.group().remove(element);
     }
     // asssign new group
-    element.group = this;
+    element.__group__ = this;
     this.__members__.push(element);
     return this;
   }
@@ -112,5 +114,22 @@ class Group extends BasicElement {
     }
     // Remove self
     super.erase();
+  }
+  /**
+  * Function to command all group element to draw itself;
+  */
+  __draw__ (context) {
+    let members = this.__members__,
+      i = 0,
+      ii = members.length;
+    // do not draw if invisible
+    if (!this.config.visible) {
+      return;
+    }
+    // Iterating over each member;
+    // commanding to draw
+    for (; i < ii; ++i) {
+      members[i].__draw__(context);
+    }
   }
 }

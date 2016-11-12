@@ -2,10 +2,14 @@
 * Storing all defaults value
 * that is used in Library
 */
-let defaults = {
-  canvasHeight: 300,
-  canvasWidth: 500
-};
+let libDefaults = {
+    canvasHeight: 300,
+    canvasWidth: 500,
+    fill: '#fff',
+    stroke: '#000'
+  },
+  userDefaults = {
+  };
 /**
 * Constructor function to initialize CanvasLite
 */
@@ -56,6 +60,12 @@ class CanvasLite {
   */
   group () {
     return new Group(this);
+  }
+  /**
+  * clearing canvas
+  */
+  clear () {
+    this.brush.clearCanvas();
   }
 }
 // Exposing CanvasLite to global space
