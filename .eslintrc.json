@@ -7,6 +7,7 @@
     "globals":{
       "define": true,
       "Group" : true,
+      "CanvasLite": true,
       "BasicElement" : true,
       "Element" : true,
       "Painter" : true,
@@ -24,6 +25,7 @@
         "error",
         "always"
       ],
+      "no-proto": ["warn"],
       "no-unused-vars": ["warn"]
     }
 }

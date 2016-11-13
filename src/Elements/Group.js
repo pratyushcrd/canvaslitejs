@@ -48,6 +48,7 @@ class Group extends BasicElement {
     // asssign new group
     element.__group__ = this;
     this.__members__.push(element);
+    this.__notifyChange__();
     return this;
   }
   /**
@@ -112,6 +113,7 @@ class Group extends BasicElement {
     for (; i--;) {
       members[i].erase();
     }
+    this.__notifyChange__();
     // Remove self
     super.erase();
   }
@@ -121,7 +123,13 @@ class Group extends BasicElement {
   __draw__ (context) {
     let members = this.__members__,
       i = 0,
-      ii = members.length;
+      // If group is not drawn completely; members check
+      // If not case ; when group is initialized its BasicEl
+      // constructor is called which adds it toroot group and calls
+      // for __notify__ which then commands all group to draw
+      // but then this group would not have its member as its initialization
+      // is not complete thus will cause error
+      ii = members && members.length || 0;
     // Iterating over each member;
     // commanding to draw
     for (; i < ii; ++i) {

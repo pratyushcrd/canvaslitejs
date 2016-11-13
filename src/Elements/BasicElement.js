@@ -60,17 +60,22 @@ class BasicElement {
   /**
   * Erase current element
   */
-  erase () {
+  erase (dontNotify) {
     var key;
-    this.group.remove(this);
+    this.group().remove(this);
+    // Notify element erased unless group is erasing it
+    if (!dontNotify) {
+      this.__notifyChange__();
+    }
     // delete every property of element
     for (key in this) {
       if (this.hasOwnProperty(key)) {
         delete this[key];
       }
     }
-    // Notify element erased
-    this.__notifyChange__();
+    // removing proto
+    this.__proto__ = null;
+    return this;
   }
   /**
   * Hide current element
@@ -104,7 +109,7 @@ class BasicElement {
   * Behave when property of element is changed
   */
   __notifyChange__ (forceNotify) {
-    if (this.config && this.config.visible || forceNotify) {
+    if (forceNotify || this.config && this.config.visible) {
       // Notify change only if visible
       // and if element exists
       if (!this.isRoot) {
@@ -179,11 +184,13 @@ class BasicElement {
   */
   sendBack () {
     this.group().__sendToBack__(this);
+    this.__notifyChange__();
   }
   /**
   * Push element to first in the group
   */
   bringFront () {
     this.group().__sendToFront__(this);
+    this.__notifyChange__();
   }
 }

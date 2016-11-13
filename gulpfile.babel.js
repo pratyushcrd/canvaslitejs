@@ -41,14 +41,14 @@ gulp.task('lint', () =>
 );
 
 gulp.task('test', ['lint'], () =>
-  gulp.src(PATH.allSrcJs)
+  gulp.src([PATH.allSrcJs, PATH.allTests])
     .pipe(istanbul())
     .pipe(istanbul.hookRequire())
     .on('finish', function () {
-      gulp.src(PATH.allTests)
+      /* gulp.src(PATH.allTests)
         .pipe(mocha())
         .pipe(istanbul.writeReports())
-        .pipe(istanbul.enforceThresholds({ thresholds: { global: 90 } }));
+        .pipe(istanbul.enforceThresholds({ thresholds: { global: 90 } })); */
     })
 );
 
@@ -87,7 +87,7 @@ gulp.task('build-es5', ['clean:dist'], () =>
 );
 
 gulp.task('build', ['clean:dist'], () =>
-  gulp.src(PATH.allSrcJs)
+  gulp.src([PATH.allSrcJs, PATH.allTests])
   .pipe(concat('canvaslite-es6.min.js'))
   .pipe(iife({
     useStrict: true,

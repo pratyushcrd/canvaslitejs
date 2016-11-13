@@ -1,112 +1,22 @@
-/*
 'use strict';
-import { describe, it } from 'mocha';
-import { expect } from 'chai';
+var paper = new CanvasLite('canvas', 900, 900),
+  r0 = paper.rect(0, 0, 100, 100, '#E97592', '#FFAC8B'),
+  r1 = paper.rect(66, 55, 100, 100, '#B7AC54', '#95B830'),
+  r2 = paper.rect(114, 126, 100, 100, '#BEC4A1', '#0ADAA5'),
+  r3 = paper.rect(194, 148, 100, 100, '#035C69', '#8A8BF3'),
+  r4 = paper.rect(255, 182, 100, 100, '#4F1168', '#A87E21'),
+  r5 = paper.rect(275, 259, 100, 100, '#91E400', '#3AB78E'),
+  r6 = paper.rect(350, 310, 100, 100, '#73F1E6', '#CAAC6C'),
+  r7 = paper.rect(351, 375, 100, 100, '#D3009C', '#FF4494'),
+  r8 = paper.rect(395, 376, 100, 100, '#97BD77', '#9ECD89'),
+  r9 = paper.rect(488, 462, 100, 100, '#2D1385', '#DBB16A'),
+  r10 = paper.rect(497, 523, 100, 100, '#888447', '#0716CB'),
+  r11 = paper.rect(561, 600, 100, 100, '#E2B1FA', '#CD4031'),
+  r12 = paper.rect(593, 648, 100, 100, '#712C35', '#C097EB'),
+  r13 = paper.rect(612, 695, 100, 100, '#8D5D7E', '#3B250F'),
+  r14 = paper.rect(689, 696, 100, 100, '#2A8C5A', '#DCADBB'),
+  g = paper.group();
+g.add([r1, r3, r5]);
+g.hide();
+g.show();
 
-var FusionCharts = require('../lib/fusioncharts');
-
-var DateRange = require('../src/fcts-ext-daterange');
-var DateInput = require('../src/fcts-ext-dateinput');
-var StartDateInput = require('../src/fcts-ext-startdateinput');
-var EndDateInput = require('../src/fcts-ext-enddateinput');
-var Calendar = require('../src/fcts-ext-calendar');
-
-describe('DateRange', function () {
-  var self = this;
-  FusionCharts.register('extension', ['date-range-chooser', function (id) {
-    var global = this;
-    var extAPI = global.extAPI;
-
-    self.dr = new DateRange();
-    extAPI(self.dr);
-  }]);
-  var fc = new FusionCharts(); // eslint-disable-line no-unused-vars
-  self.dr.range = {
-    startDate: 12000,
-    endDate: 13000
-  };
-  describe('#range', function () {
-    it('should be an object', function () {
-      expect(new DateRange().range).to.be.an('object');
-    });
-    it('should have the keys startDate and endDate set to zero initially', function () {
-      expect(new DateRange().range.startDate).to.equal(0);
-      expect(new DateRange().range.endDate).to.equal(0);
-    });
-    it('should have the keys startDate and endDate', function () {
-      expect(self.dr.range).to.have.all.keys(['startDate', 'endDate']);
-    });
-    it('should have the value of the key startDate be at most the value of the key endDate', function () {
-      expect(self.dr.range.startDate).to.be.at.most(self.dr.range.endDate);
-    });
-    it('should be unchanged if startDate is set greater than endDate', function () {
-      self.dr.range = {
-        startDate: 17000,
-        endDate: 12000
-      };
-      expect(self.dr.range.startDate).to.equal(12000);
-      expect(self.dr.range.endDate).to.equal(13000);
-    });
-    it('should set the values of startDate and endDate', function () {
-      self.dr.range = {
-        startDate: 12125,
-        endDate: 18676
-      };
-      expect(self.dr.range.startDate).to.equal(12125);
-      expect(self.dr.range.endDate).to.equal(18676);
-    });
-  });
-  describe('#swapDates', function () {
-    it('should swap the dates of the range member', function () {
-      var tempStartDt = self.dr.range.startDate;
-      var tempEndDt = self.dr.range.endDate;
-      self.dr.swapDates();
-      expect(self.dr.range.startDate).to.equal(tempEndDt);
-      expect(self.dr.range.endDate).to.equal(tempStartDt);
-    });
-  });
-  self.dr.dispose();
-});
-
-describe('DateInput', function () {
-  var di = new DateInput();
-  di.timestamp = 7;
-  describe('#timestamp', function () {
-    it('should be a number', function () {
-      expect(new DateInput().timestamp).to.be.a('number');
-    });
-    it('should be zero initially', function () {
-      expect(new DateInput().timestamp).to.equal(0);
-    });
-    it('should be able to set the value of timestamp', function () {
-      expect(di.timestamp).to.equal(7);
-      di.timestamp = 8;
-      expect(di.timestamp).to.equal(8);
-    });
-  });
-});
-
-describe('StartDateInput', function () {
-  var sdi = new StartDateInput();
-  sdi.startDate = '12/11/2016';
-});
-
-describe('EndDateInput', function () {
-  var edi = new EndDateInput();
-  edi.endDate = '18/11/2016';
-});
-
-describe('Calendar', function () {
-  var cal = new Calendar();
-  describe('#showCalendar', function () {
-    it('should be a string', function () {
-      expect(cal.showCalendar()).to.be.a('string');
-    });
-  });
-  describe('#hideCalendar', function () {
-    it('should be a string', function () {
-      expect(cal.hideCalendar()).to.be.a('string');
-    });
-  });
-});
-*/
