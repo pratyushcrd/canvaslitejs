@@ -1,5 +1,6 @@
 'use strict';
 var paper = new CanvasLite('canvas', 900, 900),
+  rootGroup = paper.rootGroup,
   r0 = paper.rect(0, 0, 100, 100, '#E97592', '#FFAC8B'),
   r1 = paper.rect(66, 55, 100, 100, '#B7AC54', '#95B830'),
   r2 = paper.rect(114, 126, 100, 100, '#BEC4A1', '#0ADAA5'),
@@ -15,8 +16,60 @@ var paper = new CanvasLite('canvas', 900, 900),
   r12 = paper.rect(593, 648, 100, 100, '#712C35', '#C097EB'),
   r13 = paper.rect(612, 695, 100, 100, '#8D5D7E', '#3B250F'),
   r14 = paper.rect(689, 696, 100, 100, '#2A8C5A', '#DCADBB'),
-  g = paper.group();
+  g = paper.group(),
+  error = console.error.bind(console),
+  x = 0,
+  y = 0,
+  h = 0,
+  w = 0,
+  t = 0;
+
+if (rootGroup.__members__.length !== 16) {
+  error('Members length not correct');
+}
+
 g.add([r1, r3, r5]);
 g.hide();
+
+if (rootGroup.__members__.length !== 13) {
+  error('Members length not correct after appending items in group');
+}
+
+if (g.config.visible) {
+  error('Element not hidden');
+}
+
 g.show();
 
+if (!g.config.visible) {
+  error('Element not shown');
+}
+
+g.erase();
+
+if (g.__proto__) {
+  error('Group not erased');
+}
+if (r1.__proto__) {
+  error('Group member not erased');
+}
+if (r3.__proto__) {
+  error('Group member not erased');
+}
+if (r5.__proto__) {
+  error('Group member not erased');
+}
+
+r1 = paper.rect(66, 55, 100, 100, '#B7AC54', '#95B830');
+r3 = paper.rect(194, 148, 100, 100, '#035C69', '#8A8BF3');
+r5 = paper.rect(275, 259, 100, 100, '#91E400', '#3AB78E');
+g = paper.group();
+g.add([r1, r3, r5]);
+
+if (rootGroup.__members__.length !== 13) {
+  error('Members length not correct');
+}
+
+if (g.__members__.length !== 3) {
+  error('Members length not correct');
+}
