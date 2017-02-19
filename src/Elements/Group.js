@@ -73,18 +73,11 @@ class Group extends BasicElement {
       ii = members.length,
       j = 0;
     this.__checkIfEl__(element);
-    for (; i < ii; ++i) {
-      if (members[i] === element) {
-        break;
-      }
-    }
-    if (i === ii) { // Element not found
+    i = members.indexOf(element);
+    if (!~i) { // Element not found
       throw Error('Element not in current group');
     } else { // Remove the element
-      for (j = i + 1; j < ii; ++j) {
-        members[j - 1] = members[j];
-      }
-      members.pop();
+      members.splice(i, 1);
       delete element.group;
     }
     return this;
@@ -96,7 +89,7 @@ class Group extends BasicElement {
     let members = this.__members__,
       i = members.length;
     for (; i--;) {
-      delete members[i].group;
+      members[i].pop();
     }
     // Remove references of all elements
     this.__members__ = [];
@@ -133,7 +126,7 @@ class Group extends BasicElement {
     // Iterating over each member;
     // commanding to draw
     for (; i < ii; ++i) {
-      members[i].draw(context);
+      members[i].__draw__(context);
     }
   }
   /**
