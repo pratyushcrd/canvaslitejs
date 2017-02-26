@@ -1,0 +1,22 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link href="css/mocha.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="mocha"></div>
+
+  <script src="js/expect.js"></script>
+  <script src="js/mocha.js"></script>
+  <script src="js/chai.js"></script>
+  <script src="../out/canvaslite.js"></script>
+
+  <script>mocha.setup('bdd')</script>
+  <script src="test.constructor.js"></script>
+  <script>
+    mocha.checkLeaks();
+    mocha.run();
+  </script>
+</body>
+</html>

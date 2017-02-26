@@ -4,7 +4,11 @@ const config = {
   entry: './src/constructor/constructor.js',
   output: {
     path: path.resolve(__dirname, 'out'),
-    filename: 'canvaslite.js'
+    filename: 'canvaslite.js',
+    // export itself to a global var
+    libraryTarget: "var",
+    // name of the global var: "Foo"
+    library: "CanvasLite"
   },
   module: {
     loaders: [
