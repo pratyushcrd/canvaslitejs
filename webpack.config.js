@@ -16,17 +16,17 @@ const config = {
   }
 };
 
-// Babel Loader
-config.module.loaders.push({
-  test: /\.js$/,
-  exclude: /(node_modules|bower_components)/,
-  loader: 'babel-loader',
-  query: {
-    presets: ['es2015'],
-    // the 'transform-runtime' plugin tells babel to require the runtime
-    // instead of inlining it.
-    plugins: ['transform-runtime']
-  }
-});
+// // Babel Loader
+// config.module.loaders.push({
+//   test: /\.js$/,
+//   exclude: /(node_modules|bower_components)/,
+//   loader: 'babel-loader',
+//   query: {
+//     presets: ['es2015'],
+//     // the 'transform-runtime' plugin tells babel to require the runtime
+//     // instead of inlining it.
+//     plugins: ['transform-runtime']
+//   }
+// });
 
 module.exports = config;
