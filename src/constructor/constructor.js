@@ -1,12 +1,13 @@
-const Errors = require('../utils/errorlib'),
-  DefaultLib = require('../utils/defaultslib'),
+const errors = require('../utils/error'),
+  defaults = require('../utils/defaults'),
+  lib = require('../utils/lib'),
   getCanvas = function (id) {
     let canvas = document.getElementById(id)
     // sanity check
     if (!canvas) {
-      Errors.elementNotFound(id)
+      errors.elementNotFound(id)
     } else if (!canvas.getContext) {
-      Errors.notACanvas()
+      errors.notACanvas()
     }
     return canvas
   }
@@ -20,11 +21,10 @@ class CanvasLite {
     // Storing context
     canvas.canvasContext = targetCanvas.getContext('2d')
     // Getting height-width from user or from defaults
-    width = this.width = width || DefaultLib.canvasW
-    height = this.height = height || DefaultLib.canvasH
+    width = this.width = width || defaults.canvasW
+    height = this.height = height || defaults.canvasH
     // Applying height and width
-    targetCanvas.setAttribute('width', width)
-    targetCanvas.setAttribute('height', height)
+    lib.applyAttr(targetCanvas, {width, height});
 	}
 }
 
