@@ -24,3 +24,21 @@ describe('Constructor test', function(){
 		expect(cLite).to.be.a(Constructor)
 	})
 })
+
+describe('Register component test', function(){
+	it('should register function', function () {
+		expect(function () {
+			Constructor.registerComponent('Dummy', function(){})
+		}).to.not.throwException();
+	})
+	it('should not register duplicate function', function () {
+		expect(function () {
+			Constructor.registerComponent('Dummy', function(){})
+		}).to.throwException();
+	})
+	it('should not register anything other than function', function () {
+		expect(function () {
+			Constructor.registerComponent('AnotherDummy', 'Dummy String')
+		}).to.throwException();
+	})
+})

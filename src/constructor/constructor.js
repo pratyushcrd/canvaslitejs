@@ -1,6 +1,7 @@
 const errors = require('../utils/error'),
   defaults = require('../utils/defaults'),
   lib = require('../utils/lib'),
+  constants = require('../utils/constants'),
   getCanvas = function (id) {
     let canvas = document.getElementById(id)
     // sanity check
@@ -13,7 +14,7 @@ const errors = require('../utils/error'),
   }
 
 class CanvasLite {
-	constructor(id, width, height) {
+	constructor (id, width, height) {
 		let canvas = this,
       targetCanvas
 		// Getting target canvas
@@ -27,6 +28,20 @@ class CanvasLite {
     lib.applyAttr(targetCanvas, {width, height});
 	}
 }
-
+// Initializing components
+CanvasLite.components = {};
+// Library related functions
+CanvasLite.registerComponent = function (key, component) {
+  let comp = CanvasLite.components
+  // Throw error if component already registered
+  if (comp[constants.has](key)) {
+    errors.alreadyExists(key)
+  }
+  if (lib.is(component).a('function')) {
+    comp[key] = component;
+  } else {
+    errors.mustBe('function')
+  }
+}
 // Exporting Library
 module.exports = CanvasLite;
