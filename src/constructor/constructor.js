@@ -12,6 +12,7 @@ const errors = require('../utils/error'),
     }
     return canvas
   }
+let basicEl
 
 class CanvasLite {
 	constructor (id, width, height) {
@@ -47,5 +48,7 @@ CanvasLite.registerComponent = function (key, component) {
 CanvasLite.getComponent = function (key) {
   return CanvasLite.components[key]
 }
+// Importing other elements
+basicEl = require('../elements/basicelement')(CanvasLite)
 // Exporting Library
 module.exports = CanvasLite;

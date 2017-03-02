@@ -1,5 +1,8 @@
 class BasicElement {
 
 }
-// Exporting the BasicElement class
-module.exports = BasicElement
+// Exporting a function so that basicelement
+// can be register to constructor
+module.exports = function (CanvasLite) {
+	CanvasLite.registerComponent('BasicElement', BasicElement)
+}
