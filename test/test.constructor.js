@@ -26,9 +26,10 @@ describe('Constructor test', function(){
 })
 
 describe('Register component test', function(){
+	let registerFn = function(){};
 	it('should register function', function () {
 		expect(function () {
-			Constructor.registerComponent('Dummy', function(){})
+			Constructor.registerComponent('Dummy', registerFn)
 		}).to.not.throwException();
 	})
 	it('should not register duplicate function', function () {
@@ -40,5 +41,11 @@ describe('Register component test', function(){
 		expect(function () {
 			Constructor.registerComponent('AnotherDummy', 'Dummy String')
 		}).to.throwException();
+	})
+	it('get registered component', function () {
+		expect(Constructor.getComponent('Dummy')).to.be(registerFn);
+	})
+	it('get registered component', function () {
+		expect(Constructor.getComponent('AnotherDummy')).to.be(undefined);
 	})
 })

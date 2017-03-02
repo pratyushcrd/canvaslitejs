@@ -43,5 +43,9 @@ CanvasLite.registerComponent = function (key, component) {
     errors.mustBe('function')
   }
 }
+// Function to get registered components
+CanvasLite.getComponent = function (key) {
+  return CanvasLite.components[key]
+}
 // Exporting Library
 module.exports = CanvasLite;
