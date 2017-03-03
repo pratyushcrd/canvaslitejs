@@ -6,10 +6,16 @@ module.exports = {
     notACanvas: function () {
         throw Error('not a canvas Element')
     },
-    alreadyExists: function (key) {
-    	throw Error('component with name \'' + key + '\' already exists')
+    alreadyExists: function (what, key) {
+    	throw Error(what + ' with name \'' + key + '\' already exists')
     },
-    mustBe: function (type) {
-    	throw Error('must be a ' + type)
+    mustBe: function (name, type) {
+    	throw Error(name + ' must be a ' + type)
+    },
+    notDefined: function (name) {
+        throw Error(name + ' is not defined')
+    },
+    default: function (message) {
+        throw Error(message)
     }
 }

@@ -1,3 +1,8 @@
+// Variables declaration
+let basicEl,
+  cProto;
+
+// Constants definition
 const errors = require('../utils/error'),
   defaults = require('../utils/defaults'),
   lib = require('../utils/lib'),
@@ -11,8 +16,24 @@ const errors = require('../utils/error'),
       errors.notACanvas()
     }
     return canvas
-  }
-let basicEl
+  },
+  registerComponentSanity = function (key, component, instanceMethod) {
+    let comp = CanvasLite.components
+    // Throw error if component already registered
+    if (!key) {
+      errors.notDefined('key')
+    }
+    if (instanceMethod && cProto[constants.has](key)) {
+      errors.alreadyExists('instance method', key)
+    }
+    if (!lib.is(component).a('function')) {
+      errors.mustBe('component', 'function')
+    }
+    // Checking if Constructor has same component
+    if (comp[constants.has](key)) {
+      errors.alreadyExists('component', key)
+    }
+  };
 
 class CanvasLite {
 	constructor (id, width, height) {
@@ -31,17 +52,23 @@ class CanvasLite {
 }
 // Initializing components
 CanvasLite.components = {};
+// Setting cProto
+cProto = CanvasLite.prototype
 // Library related functions
-CanvasLite.registerComponent = function (key, component) {
+CanvasLite.registerComponent = function (key, component, instanceMethod) {
   let comp = CanvasLite.components
-  // Throw error if component already registered
-  if (comp[constants.has](key)) {
-    errors.alreadyExists(key)
-  }
-  if (lib.is(component).a('function')) {
-    comp[key] = component;
-  } else {
-    errors.mustBe('function')
+  // Sanity checking of arguments
+  registerComponentSanity.apply(null, arguments)
+  // Registering as an component
+  comp[key] = component;
+  // registering instance method if provided
+  if (instanceMethod) {
+    if (cProto[constants.has](instanceMethod)) {
+      errors.alreadyExists('instance method', key)
+    }
+    cProto[instanceMethod] = function (group) {
+      new component(this, group)
+    }
   }
 }
 // Function to get registered components

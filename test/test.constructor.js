@@ -30,12 +30,17 @@
 		let registerFn = function(){};
 		it('should register function', function () {
 			expect(function () {
-				Constructor.registerComponent('Dummy', registerFn)
+				Constructor.registerComponent('Dummy', registerFn, 'dummy')
 			}).to.not.throwException();
 		})
-		it('should not register duplicate function', function () {
+		it('should not register duplicate component', function () {
 			expect(function () {
-				Constructor.registerComponent('Dummy', function(){})
+				Constructor.registerComponent('Dummy', function(){}, 'whatever')
+			}).to.throwException();
+		})
+		it('should not register duplicate instanceMethod', function () {
+			expect(function () {
+				Constructor.registerComponent('Dummy2', function(){}, 'dummy')
 			}).to.throwException();
 		})
 		it('should not register anything other than function', function () {
