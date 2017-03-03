@@ -1,0 +1,1187 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"regi",
+				"registerComponentSanity"
+			],
+			[
+				"ins",
+				"instanceMethod"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"_P",
+				"_Px"
+			],
+			[
+				"conf",
+				"config"
+			],
+			[
+				"remove",
+				"removeDataLen"
+			],
+			[
+				"dataS",
+				"dataStore"
+			],
+			[
+				"scroll",
+				"scrollMaxVal"
+			],
+			[
+				"asyn",
+				"asyncRemoveCatLen"
+			],
+			[
+				"removeC",
+				"removeCatLen"
+			],
+			[
+				"transL",
+				"translateString"
+			],
+			[
+				"base",
+				"baseZero"
+			],
+			[
+				"real",
+				"realTimeUpdate"
+			],
+			[
+				"first",
+				"firstRealTimeUpdate"
+			],
+			[
+				"temp",
+				"temp2"
+			],
+			[
+				"hide",
+				"hideThis"
+			],
+			[
+				"zer",
+				"zeroPath"
+			],
+			[
+				"com",
+				"component"
+			],
+			[
+				"tar",
+				"targetCanvas"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"anim",
+				"animationElements"
+			],
+			[
+				"trs",
+				"translation"
+			],
+			[
+				"canvas",
+				"canvasGroup"
+			],
+			[
+				"can",
+				"canvasGroup"
+			],
+			[
+				"get",
+				"getHVOb"
+			],
+			[
+				"getTra",
+				"_getTranslationString"
+			],
+			[
+				"sca",
+				"scaleY"
+			],
+			[
+				"scal",
+				"scaleX"
+			],
+			[
+				"zoom",
+				"zoomFactor"
+			],
+			[
+				"cal",
+				"calculateTranslation"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"set",
+				"setterGetter"
+			],
+			[
+				"data",
+				"dataset"
+			],
+			[
+				"animAtt",
+				"animAttrObj"
+			],
+			[
+				"upda",
+				"updating"
+			],
+			[
+				"setEl",
+				"setElCosmetics"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"orig",
+				"origp"
+			],
+			[
+				"dela",
+				"delaystart"
+			],
+			[
+				"del",
+				"delaystart"
+			],
+			[
+				"delay",
+				"delayend"
+			],
+			[
+				"pare",
+				"parentEl"
+			],
+			[
+				"deq",
+				"deqArr"
+			],
+			[
+				"hook",
+				"hookManager"
+			],
+			[
+				"start",
+				"startIndex"
+			],
+			[
+				"this",
+				"thisAnimateObj"
+			],
+			[
+				"app",
+				"applyAttr"
+			],
+			[
+				"or",
+				"origCallback"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"appl",
+				"applyCallback"
+			],
+			[
+				"ret",
+				"retObj"
+			],
+			[
+				"c",
+				"component"
+			],
+			[
+				"dra",
+				"drawn"
+			],
+			[
+				"alpha",
+				"alphaanimation"
+			],
+			[
+				"dataL",
+				"dataLength"
+			],
+			[
+				"anima",
+				"animateClockWise"
+			],
+			[
+				"dataSetG",
+				"dataSetGroup"
+			],
+			[
+				"pieC",
+				"pieContainer"
+			],
+			[
+				"conta",
+				"pieContainer"
+			],
+			[
+				"alp",
+				"alphaanimation"
+			],
+			[
+				"dataLa",
+				"dataLabelContainer"
+			],
+			[
+				"colo",
+				"colour"
+			],
+			[
+				"fade",
+				"fadeOut"
+			],
+			[
+				"callb",
+				"callback"
+			],
+			[
+				"init",
+				"initial"
+			],
+			[
+				"prev",
+				"prevPositions"
+			],
+			[
+				"old",
+				"oldElemRadius"
+			],
+			[
+				"oldE",
+				"oldElemInnerRadius"
+			],
+			[
+				"initi",
+				"initialAngle"
+			],
+			[
+				"ev",
+				"eventArgs"
+			],
+			[
+				"remode",
+				"removedDsArr"
+			],
+			[
+				"ima",
+				"imageElement"
+			],
+			[
+				"firt",
+				"firstDraw"
+			],
+			[
+				"full",
+				"fullOldPath"
+			],
+			[
+				"hi",
+				"hidingAnimation"
+			],
+			[
+				"connect",
+				"connectorPath"
+			],
+			[
+				"axis",
+				"axisChange"
+			],
+			[
+				"proxyp",
+				"prevProxyPathExpanded"
+			],
+			[
+				"oldL",
+				"oldLimX"
+			],
+			[
+				"proxy",
+				"proxyPath"
+			],
+			[
+				"conne",
+				"connectNullData"
+			],
+			[
+				"connec",
+				"connectnulldata"
+			],
+			[
+				"ele",
+				"element"
+			],
+			[
+				"config",
+				"configObject"
+			],
+			[
+				"hoo",
+				"hookFn"
+			],
+			[
+				"parma",
+				"params"
+			],
+			[
+				"confi",
+				"configObject"
+			],
+			[
+				"runAni",
+				"runAnimArr"
+			],
+			[
+				"runA",
+				"runAnimArr"
+			],
+			[
+				"gp",
+				"gpIndex1"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"path",
+				"pathArr"
+			],
+			[
+				"inti",
+				"initial"
+			],
+			[
+				"prevP",
+				"prevProxyPath"
+			],
+			[
+				"datas",
+				"dataStore"
+			],
+			[
+				"prox",
+				"proxyPath"
+			],
+			[
+				"legen",
+				"legendInteractivity"
+			],
+			[
+				"getOldV",
+				"getOldValY"
+			],
+			[
+				"getP",
+				"getPathArr"
+			],
+			[
+				"getOl",
+				"getOldPath"
+			],
+			[
+				"fP",
+				"fPath2"
+			],
+			[
+				"ratio",
+				"ratioArr"
+			],
+			[
+				"percen",
+				"percentOb"
+			],
+			[
+				"string",
+				"stringValue"
+			],
+			[
+				"dP",
+				"dPath1"
+			],
+			[
+				"pa",
+				"path"
+			],
+			[
+				"final",
+				"finalPath"
+			],
+			[
+				"In",
+				"Infinity"
+			],
+			[
+				"chartC",
+				"chartConfig"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/constructor/constructor.js",
+			"settings":
+			{
+				"buffer_size": 2450,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/elements/basicelement.js",
+			"settings":
+			{
+				"buffer_size": 246,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/test.constructor.js",
+			"settings":
+			{
+				"buffer_size": 1920,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/test.basicelement.js",
+			"settings":
+			{
+				"buffer_size": 282,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "remove",
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"gitgu",
+				"GitGutter: Show Diff Popup"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/pratyush/Desktop/canvaslitejs",
+		"/Users/pratyush/Desktop/canvaslitejs/out",
+		"/Users/pratyush/Desktop/canvaslitejs/src",
+		"/Users/pratyush/Desktop/canvaslitejs/src/constructor",
+		"/Users/pratyush/Desktop/canvaslitejs/src/elements",
+		"/Users/pratyush/Desktop/canvaslitejs/src/utils",
+		"/Users/pratyush/Desktop/canvaslitejs/test"
+	],
+	"file_history":
+	[
+		"/Users/pratyush/Desktop/canvaslitejs/webpack.config.js",
+		"/Users/pratyush/Desktop/canvaslitejs/src/utils/error.js",
+		"/Users/pratyush/Desktop/canvaslitejs/out/canvaslite.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/datasets/area.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/datasets/column.js",
+		"/Users/pratyush/Desktop/realt.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/logic.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/components/vcanvas.js",
+		"/Users/pratyush/Desktop/demo.txt",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/components/animation-manager.js",
+		"/Users/pratyush/Desktop/var fs = require('fs');",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/package/raphael-fusioncharts.js",
+		"/Users/pratyush/Desktop/canvaslitejs/src/elements",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/source/raphael.core.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/gui/raphaeltests.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/package/raphael.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/gui/show/raphaeltests.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/gui/show/index.html",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/gui/show/main.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/components/legend.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/index.html",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/datasets/scatter.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/datasets/line.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/datasets/pie3d.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/components/lib.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/charts/fusioncharts.pie3d.js",
+		"/Users/pratyush/Desktop/xt-edge/node_modules/jslink/src/lib.js",
+		"/Users/pratyush/Desktop/Files/rrimpan.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/gui/sync/script.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/gui/sync/index.html",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/axis/cartesian.js",
+		"/Users/pratyush/Desktop/tearablecloth/main.js",
+		"/Users/pratyush/Desktop/tearablecloth/style.css",
+		"/Users/pratyush/Desktop/tearablecloth/index.html",
+		"/Users/pratyush/Desktop/d3-path-morphing/example/data.js",
+		"/Users/pratyush/Desktop/d3-path-morphing/src/morphPath.js",
+		"/Users/pratyush/Desktop/morphPath.js",
+		"/Users/pratyush/Desktop/d3-path-morphing/example/plugin.js",
+		"/Users/pratyush/Desktop/test.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/charts/fusioncharts.scatter.js",
+		"/Users/pratyush/Library/Application Support/Sublime Text 3/Packages/GitGutter/gitgutter_popup.css",
+		"/Users/pratyush/Desktop/Files/area_7ds.xml",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/datasets/groups/column.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/comparison_gui/resources/dataSource/test_cases/animationTestCases/bubble/chartsSpec.json",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/comparison_gui/resources/dataSource/test_cases/animationTestCases/scatter/chartsSpec.json",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/comparison_gui/resources/dataSource/test_cases/animationTestCases/msarea/chartsSpec.json",
+		"/Users/pratyush/Desktop/props.js",
+		"/Users/pratyush/Desktop/untitled.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/datasets/{",
+		"/Users/pratyush/Desktop/lineDrawPlot.js",
+		"/Users/pratyush/Desktop/drawarea.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/datasets/untitled.js",
+		"/Users/pratyush/Desktop/xt-edge/out/_build/fusioncharts.js.eval.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/src/mantle/renderer-javascript/datasets/pyramid.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/_edge-gui/jquery-ui/jquery-ui.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/_edge-gui/jquery-ui/jquery-ui.min.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/_edge-gui/js/jqueryui/jquery-ui.min.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/_edge-gui/resources/firebug/firebug-lite.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/index-ts.html",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/jquery-ui/jquery-ui.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/jquery-ui/jquery-ui.min.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/js/jqueryui/jquery-ui.min.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/resources/firebug/firebug-lite.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/testBuild/build_files/3.10.1/fusioncharts.charts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/testBuild/build_files/3.10.1/fusioncharts.gantt.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/testBuild/build_files/3.10.1/fusioncharts.jqueryplugin.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/testBuild/build_files/3.10.1/fusioncharts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/testBuild/build_files/3.10.1/fusioncharts.powercharts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/testBuild/build_files/3.10.1/fusioncharts.treemap.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/testBuild/build_files/3.10.1/fusioncharts.widgets.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/testBuild/build_files/3.10.1/fusioncharts.zoomscatter.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/testBuild/build_files/3.9.0/fusioncharts.charts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/testBuild/build_files/3.9.0/fusioncharts.gantt.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/testBuild/build_files/3.9.0/fusioncharts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/testBuild/build_files/3.9.0/fusioncharts.powercharts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/testBuild/build_files/3.9.0/fusioncharts.widgets.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/testBuild/resources/jQuery/jquery-ui.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/timeSeriesSamples/acyclicTimeSpan.html",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/timeSeriesSamples/legendOnRight.html",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/timeSeriesSamples/overlappingSpans.html",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/timeSeriesSamples/realtime.html",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/timeSeriesSamples/timeInstants.html",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/edge-gui/timeSeriesSamples/spaceManagerSamples/js/sampleData.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/testingGUI/build_files/3.10.1/fusioncharts.charts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/testingGUI/build_files/3.10.1/fusioncharts.gantt.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/testingGUI/build_files/3.10.1/fusioncharts.jqueryplugin.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/testingGUI/build_files/3.10.1/fusioncharts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/testingGUI/build_files/3.10.1/fusioncharts.powercharts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/testingGUI/build_files/3.10.1/fusioncharts.treemap.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/testingGUI/build_files/3.10.1/fusioncharts.widgets.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/testingGUI/build_files/3.10.1/fusioncharts.zoomscatter.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/testingGUI/build_files/3.9.0/fusioncharts.charts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/testingGUI/build_files/3.9.0/fusioncharts.gantt.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/testingGUI/build_files/3.9.0/fusioncharts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/testingGUI/build_files/3.9.0/fusioncharts.powercharts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/tmp/testingGUI/build_files/3.9.0/fusioncharts.widgets.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/exporters/platforms/asp/sharp-vector-assemblies/SharpVectorRenderingGdi/Gdi/GdiMarkerRendering.cs",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/exporters/platforms/asp/sharp-vector-assemblies/SharpVectorRenderingWpf/Wpf/WpfMarkerRendering.cs",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/exporters/platforms/asp-vb/sharp-vector-assemblies/SharpVectorRenderingGdi/Gdi/GdiMarkerRendering.cs",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/exporters/platforms/asp-vb/sharp-vector-assemblies/SharpVectorRenderingWpf/Wpf/WpfMarkerRendering.cs",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/exporters/platforms/java/WebContent/FusionCharts/fusioncharts.charts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/exporters/platforms/java/WebContent/FusionCharts/fusioncharts.gantt.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/exporters/platforms/java/WebContent/FusionCharts/fusioncharts.jqueryplugin.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/exporters/platforms/java/WebContent/FusionCharts/fusioncharts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/exporters/platforms/java/WebContent/FusionCharts/fusioncharts.powercharts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/exporters/platforms/java/WebContent/FusionCharts/fusioncharts.treemap.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/exporters/platforms/java/WebContent/FusionCharts/fusioncharts.widgets.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/exporters/platforms/java/WebContent/FusionCharts/fusioncharts.zoomscatter.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/exporters/platforms/ror/vendor/assets/javascripts/fusioncharts/fusioncharts.charts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/exporters/platforms/ror/vendor/assets/javascripts/fusioncharts/fusioncharts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/fusioncharts-jquery-plugin/package/fusioncharts-jquery-plugin.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/fusioncharts-jquery-plugin/package/fusioncharts-jquery-plugin.min.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/fusioncharts-jquery-plugin/src/fusioncharts-jquery-plugin.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/index.html",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/gui/fusioncharts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/gui/raphael.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/gui/raphael_old.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/gui/show/fusioncharts.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/gui/show/raphael.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/gui/show/raphael_old.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/node_modules/eslint/lib/ast-utils.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/node_modules/eslint/lib/rules/no-multiple-empty-lines.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/node_modules/eslint/lib/rules/no-unreachable.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/node_modules/eslint/node_modules/espree/espree.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/node_modules/eslint/node_modules/espree/lib/token-translator.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/node_modules/eslint/node_modules/espree/node_modules/acorn/dist/acorn.es.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/node_modules/eslint/node_modules/espree/node_modules/acorn/dist/acorn.js",
+		"/Users/pratyush/Desktop/xt-edge/develop/vendors/redraphael/node_modules/eslint/node_modules/espree/node_modules/acorn/dist/acorn_loose.es.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"CanvasLite.prototype",
+			"registerCom",
+			"preDrawCalculate",
+			"preDrawCalculate(",
+			"predrawCal",
+			"preDrawCalculate",
+			"predrawCal",
+			"predraw",
+			"prevStore",
+			"temp",
+			"removeDataLen",
+			"getLinePath",
+			"plotAnim",
+			"scrollMaxVal",
+			"plotAnimManager",
+			"plotAnim",
+			");\n",
+			"removeData",
+			"remove",
+			"console",
+			"realtimeupdati",
+			"singleStep",
+			"atedefa",
+			".chart",
+			"applyTra",
+			"getLinePath",
+			"firstRealTimeUpdate",
+			"getPathArr",
+			"realTimeDraw : function (ajaxCall, stream, prevData,",
+			"lineElement",
+			"animateDefa",
+			"getPathArr",
+			"path2cure",
+			", 0, 0",
+			"hookManager",
+			"deqarr",
+			"deq\ndeq",
+			"deq",
+			"getLinePath = ",
+			"getPathArr",
+			".05",
+			"throwError",
+			"Errors",
+			"DefaultLib",
+			"Lib",
+			".cPos",
+			"time",
+			" animation",
+			"anim.del",
+			"runAnimation",
+			"smartMo",
+			"canvas",
+			"function pathNormalizer",
+			"pathNormalizer",
+			"commonPathCalculator",
+			"new Rap",
+			"vCanvas",
+			"VirtualCanvas",
+			"vcanvas",
+			".xAxis(",
+			"vcanvas",
+			"scaleY",
+			"translation",
+			"pathNor",
+			"setter",
+			"legend",
+			"getLinePath",
+			">>>>",
+			"animcb",
+			"console",
+			"debugger",
+			"removeEl",
+			"conf.",
+			"config:",
+			"attr",
+			"animateCom",
+			"applyType",
+			"fadeIn",
+			"applyCallback",
+			"chartConfig =",
+			"getLinePath",
+			"debugger",
+			".lineColor",
+			".lineDashStyle",
+			".lineColor",
+			".lineAlpha",
+			".lineDashGap",
+			".lineDashLen",
+			".lineThickness",
+			".rotateValues",
+			".showHoverEffect",
+			".plotBorderDashStyle",
+			".plotBorderThickness",
+			".plotBorderDashGap",
+			".plotBorderDashLen",
+			".plotBorderAlpha",
+			".fillColor",
+			".plotGradientColor",
+			".plotFillAlpha",
+			".plotFillColor",
+			"plotFillColor",
+			"parse",
+			"parseConfig",
+			"colorhas",
+			"anima",
+			"animAttrObj",
+			"animAttrs",
+			"animAttrObj",
+			"dsComponents.animAttrs",
+			"animControl",
+			".hiding",
+			"applyType",
+			"animcontrol",
+			"animControl",
+			"applyType",
+			"animcontrol",
+			") {",
+			"drawPlot",
+			"createconta",
+			"plot.da",
+			"drawPlots",
+			"getFirstAlpha",
+			"rawRGBtoHEX",
+			"COLOR_BLACK",
+			"hex",
+			"rbga",
+			"colour",
+			"color"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"cProto",
+			"errors",
+			"defaults",
+			".linecolor",
+			".linedashstyle",
+			".lineColor",
+			".linealpha",
+			".linedashgap",
+			".linedashlen",
+			".linethickness",
+			".showhovereffect",
+			".plotborderdashstyle",
+			".plotborderthickness",
+			".plotborderdashgap",
+			".plotborderdashlen",
+			".plotborderalpha",
+			".fillcolor",
+			".plotgradientcolor",
+			".plotfillalpha",
+			".plotfillcolor",
+			"",
+			"0",
+			"=\"",
+			"\n",
+			"=",
+			"",
+			"axis",
+			"containers.commonElemsGroup",
+			"container.commonElemsGroup",
+			"dataset.",
+			"prevProxyPathExpanded",
+			"limx",
+			"oldLimX",
+			"(",
+			"dataset",
+			"sAngle:"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/constructor/constructor.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2173,
+								2173
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 634.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/elements/basicelement.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								243,
+								243
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test/test.constructor.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1920,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1414,
+								1414
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 226.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "test/test.basicelement.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								153,
+								153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "webpack.config.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"column",
+				"develop/src/mantle/renderer-javascript/datasets/column.js"
+			],
+			[
+				"logic",
+				"develop/src/mantle/renderer-javascript/logic.js"
+			],
+			[
+				"vcanvas",
+				"develop/src/mantle/renderer-javascript/components/vcanvas.js"
+			],
+			[
+				"lo",
+				"develop/src/mantle/renderer-javascript/logic.js"
+			],
+			[
+				"animatio",
+				"develop/src/mantle/renderer-javascript/components/animation-manager.js"
+			],
+			[
+				"area",
+				"develop/src/mantle/renderer-javascript/datasets/area.js"
+			],
+			[
+				"raphael-f",
+				"develop/vendors/redraphael/package/raphael-fusioncharts.js"
+			],
+			[
+				"rahael-fus",
+				"develop/vendors/redraphael/package/raphael-fusioncharts.js"
+			],
+			[
+				"animat",
+				"develop/src/mantle/renderer-javascript/components/animation-manager.js"
+			],
+			[
+				"raphael",
+				"develop/vendors/redraphael/package/raphael-fusioncharts.js"
+			],
+			[
+				"raphaeltests",
+				"develop/vendors/redraphael/gui/show/raphaeltests.js"
+			],
+			[
+				"raphael.co",
+				"develop/vendors/redraphael/source/raphael.core.js"
+			],
+			[
+				"legend.js",
+				"develop/src/mantle/renderer-javascript/components/legend.js"
+			],
+			[
+				"scatter",
+				"develop/src/mantle/renderer-javascript/datasets/scatter.js"
+			],
+			[
+				"raphael-fus",
+				"develop/vendors/redraphael/package/raphael-fusioncharts.js"
+			],
+			[
+				"animation",
+				"develop/src/mantle/renderer-javascript/components/animation-manager.js"
+			],
+			[
+				"lib.js",
+				"develop/src/mantle/renderer-javascript/components/lib.js"
+			],
+			[
+				"pie3d",
+				"develop/src/mantle/renderer-javascript/charts/fusioncharts.pie3d.js"
+			],
+			[
+				"raphael-fu",
+				"develop/vendors/redraphael/package/raphael-fusioncharts.js"
+			],
+			[
+				"logic.js",
+				"develop/src/mantle/renderer-javascript/logic.js"
+			],
+			[
+				"cartes",
+				"develop/src/mantle/renderer-javascript/axis/cartesian.js"
+			],
+			[
+				"pie2d",
+				"develop/src/mantle/renderer-javascript/datasets/pie2d.js"
+			],
+			[
+				"logi",
+				"develop/src/mantle/renderer-javascript/logic.js"
+			],
+			[
+				"line.js",
+				"develop/src/mantle/renderer-javascript/datasets/line.js"
+			],
+			[
+				"carte",
+				"develop/src/mantle/renderer-javascript/axis/cartesian.js"
+			],
+			[
+				"raph",
+				"develop/vendors/redraphael/package/raphael-fusioncharts.js"
+			],
+			[
+				"pie3d.js",
+				"develop/src/mantle/renderer-javascript/datasets/pie3d.js"
+			],
+			[
+				".pie3d",
+				"develop/src/mantle/renderer-javascript/charts/fusioncharts.pie3d.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 764.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 314.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

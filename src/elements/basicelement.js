@@ -3,7 +3,7 @@ class BasicElement {
 	}
 }
 // Exporting a function so that basicelement
-// can be register to constructor
+// can be registered to constructor
 module.exports = function (CanvasLite) {
 	CanvasLite.registerComponent('BasicElement', BasicElement)
 }
