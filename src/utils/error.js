@@ -17,5 +17,8 @@ module.exports = {
     },
     default: function (message) {
         throw Error(message)
+    },
+    notAnInstance: function (el, fnName) {
+      throw Error(el + ' is not an instance of ' + fnName)
     }
 }

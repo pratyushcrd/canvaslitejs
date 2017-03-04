@@ -34,7 +34,9 @@ const errors = require('../utils/error'),
       errors.alreadyExists('component', key)
     }
   };
-
+/**
+* Class definition for the constructor
+**/
 class CanvasLite {
 	constructor (id, width, height) {
 		let canvas = this,
