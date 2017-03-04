@@ -46,8 +46,12 @@
       expect(basicEl.attr('x')).to.be(99)
     })
 
-    it('attr function should return \'this\' reference when in set mode', () => {
+    it('should have attr function returning \'this\' reference in set mode', () => {
       expect(basicEl.attr({x: 9})).to.be(basicEl)
+    })
+
+    it('should return proper attr', () => {
+      expect(basicEl.attr({x: 1291}).attr('x')).to.be(1291)
     })
 
   })
