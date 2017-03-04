@@ -26,6 +26,7 @@ module.exports = function (CanvasLite) {
     add (el) {
       if (isEl(el)) {
         this.members.push(el)
+        el.__setParent(this)
       }
       return this
     }
@@ -45,6 +46,20 @@ module.exports = function (CanvasLite) {
     **/
     has (el) {
       return !!~this.members.indexOf(el)
+    }
+    // Bring Child to Front
+    __bringToFront (child) {
+      let members = this.members,
+        index = members.indexOf(child)
+      ~index && members.splice(index, 1) && members.unshift(child)
+      return this
+    }
+    // Send Child to Last
+    __sendToBack (child) {
+      let members = this.members,
+        index = members.indexOf(child)
+      ~index && members.splice(index, 1) && members.push(child)
+      return this 
     }
   }
   

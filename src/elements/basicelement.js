@@ -57,6 +57,8 @@ module.exports = function (CanvasLite) {
       config.canvas = canvasInstance
       // saving blank attrs to object
       this.attrs = {}
+      // If group provide add this element to group
+      group && group.add(this)
   	}
     attr (ob) {
       let element = this,
@@ -73,6 +75,26 @@ module.exports = function (CanvasLite) {
 
       setAttr(ob, attrs, defAttrs)
       return element
+    }
+    // Internal function
+    // Set a parent
+    __setParent (group) {
+      this.config.parent = group;
+      return this
+    }
+    // Ask parent group to bring this
+    // element to front
+    bringToFront () {
+      let parent = this.config.parent
+      parent && parent.__bringToFront(this)
+      return this
+    }
+    // Ask parent group to bring this
+    // element to front
+    sendToBack () {
+      let parent = this.config.parent
+      parent && parent.__sendToBack(this)
+      return this 
     }
   }
 
