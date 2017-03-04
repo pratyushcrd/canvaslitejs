@@ -1,5 +1,5 @@
 // Variables declaration
-let basicEl,
+let Group,
   cProto;
 
 // Constants definition
@@ -33,7 +33,7 @@ const errors = require('../utils/error'),
     if (comp[constants.has](key)) {
       errors.alreadyExists('component', key)
     }
-  };
+  }
 /**
 * Class definition for the constructor
 **/
@@ -50,6 +50,8 @@ class CanvasLite {
     height = this.height = height || defaults.canvasH
     // Applying height and width
     lib.applyAttr(targetCanvas, {width, height});
+    // Making a root group on the instance
+    this.root = new Group(this)
 	}
 }
 // Initializing components
@@ -69,7 +71,7 @@ CanvasLite.registerComponent = function (key, component, instanceMethod) {
       errors.alreadyExists('instance method', key)
     }
     cProto[instanceMethod] = function (group) {
-      new component(this, group)
+      return new component(this, group)
     }
   }
 }
@@ -78,6 +80,9 @@ CanvasLite.getComponent = function (key) {
   return CanvasLite.components[key]
 }
 // Importing other elements
-basicEl = require('../elements/basicelement')(CanvasLite)
+require('../elements/basicelement')(CanvasLite)
+require('../elements/group')(CanvasLite)
+// Getting canvas
+Group = CanvasLite.getComponent('Group')
 // Exporting Library
 module.exports = CanvasLite;

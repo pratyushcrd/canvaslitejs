@@ -1,5 +1,8 @@
 let has = 'hasOwnProperty',
 	match = function match (el, type) {
+      if (typeof type === 'function') {
+        return el instanceof type
+      }
     	type = type.toLowerCase()
     	switch (el) {
     		case 'array': return Array.isArray(el)

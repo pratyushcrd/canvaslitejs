@@ -1,7 +1,7 @@
+const Constructor = CanvasLite
+let cLite,
+  canvas = new CanvasLite('canvas')
 {
-  const Constructor = CanvasLite
-  let cLite
-
   // Mocha tests
   describe('Constructor test', function(){
     it('should expose a function \'CanvasLite\'', function () {
