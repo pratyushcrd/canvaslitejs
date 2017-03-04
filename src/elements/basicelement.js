@@ -79,7 +79,10 @@ module.exports = function (CanvasLite) {
     // Internal function
     // Set a parent
     __setParent (group) {
-      this.config.parent = group;
+      let config = this.config
+      // Remove self from previous parent
+      config.parent && config.parent.remove(this)
+      config.parent = group;
       return this
     }
     // Ask parent group to bring this

@@ -39,7 +39,7 @@
       group.remove(bEl)
       expect(group.has(bEl)).to.not.be.ok()
     })
-    it('should should remove element from other group before adding to self', function () {
+    it('should remove element from other group before adding to self', function () {
       bEl = new BasicElement(canvas, group)
       group2.add(bEl)
       expect(~group.members.indexOf(bEl)).to.not.be.ok()
