@@ -4,7 +4,7 @@
     bEl,
     rootgroup = canvas.group
   // Mocha tests
-  describe('RootGroup test', function(){
+  describe('RootGroup', function(){
     it('should be in canvas instance as root', function () {
       expect(canvas.root).to.be.a(RootGroup)
     })

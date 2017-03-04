@@ -8,9 +8,9 @@
     })
 
   // Mocha tests
-  describe('BasicElement test', () => {
+  describe('BasicElement', () => {
     
-    it('Constructor should have BasicElement registered', () => {
+    it('should be registered in Constructor', () => {
       expect(BasicElement).to.be.a('function')
     })
 

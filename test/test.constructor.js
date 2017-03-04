@@ -3,7 +3,7 @@ let cLite,
   canvas = new CanvasLite('canvas')
 {
   // Mocha tests
-  describe('Constructor test', function(){
+  describe('Constructor', function(){
     it('should expose a function \'CanvasLite\'', function () {
       expect(Constructor).to.be.a('function')
     })

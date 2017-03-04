@@ -5,7 +5,7 @@
     group = new Group(canvas),
     group2 = new Group(canvas)
   // Mocha tests
-  describe('Group test', function(){
+  describe('Group', function(){
     it('should be returned in canvas instance function \'group\'', function () {
       expect(canvas.group()).to.be.a(Group)
     })
