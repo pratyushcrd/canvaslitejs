@@ -53,6 +53,13 @@ class CanvasLite {
     // Making a root group on the instance
     this.root = new RootGroup(this)
 	}
+  /**
+  * Function to command all elements 
+  * to draw itself
+  **/
+  paint () {
+    this.root.__paint(this.canvasContext)
+  }
 }
 // Initializing components
 CanvasLite.components = {};

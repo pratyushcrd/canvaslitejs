@@ -61,6 +61,15 @@ module.exports = function (CanvasLite) {
       ~index && members.splice(index, 1) && members.push(child)
       return this 
     }
+    /**
+    * Function to command all child
+    * element to draw itself
+    **/
+    __paint (ctx) {
+      this.members.forEach(function (member) {
+        member.__paint(ctx)
+      })
+    }
   }
   
   // Registering component and instance method  

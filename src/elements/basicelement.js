@@ -99,10 +99,9 @@ module.exports = function (CanvasLite) {
       parent && parent.__sendToBack(this)
       return this 
     }
-    // inner draw function to be extended by
+    // inner paint function to be extended by
     // other elements to draw itself
-    __draw (ctx) {
-
+    __paint (ctx) {
     }
   }
 
