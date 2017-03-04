@@ -1,5 +1,5 @@
 // Variables declaration
-let Group,
+let RootGroup,
   cProto;
 
 // Constants definition
@@ -51,7 +51,7 @@ class CanvasLite {
     // Applying height and width
     lib.applyAttr(targetCanvas, {width, height});
     // Making a root group on the instance
-    this.root = new Group(this)
+    this.root = new RootGroup(this)
 	}
 }
 // Initializing components
@@ -82,7 +82,8 @@ CanvasLite.getComponent = function (key) {
 // Importing other elements
 require('../elements/basicelement')(CanvasLite)
 require('../elements/group')(CanvasLite)
+require('../elements/rootgroup')(CanvasLite)
 // Getting canvas
-Group = CanvasLite.getComponent('Group')
+RootGroup = CanvasLite.getComponent('RootGroup')
 // Exporting Library
 module.exports = CanvasLite;

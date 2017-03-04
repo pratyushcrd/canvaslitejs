@@ -40,6 +40,12 @@ module.exports = function (CanvasLite) {
       }
       return this
     }
+    /**
+    * Function to check if group has the element
+    **/
+    has (el) {
+      return !!~this.members.indexOf(el)
+    }
   }
   
   // Registering component and instance method  
