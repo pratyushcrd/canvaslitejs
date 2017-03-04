@@ -50,8 +50,6 @@ let cLite,
     })
     it('get registered component', function () {
       expect(Constructor.getComponent('Dummy')).to.be(registerFn);
-    })
-    it('get registered component', function () {
       expect(Constructor.getComponent('AnotherDummy')).to.be(undefined);
     })
   })
