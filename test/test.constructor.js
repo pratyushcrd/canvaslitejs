@@ -1,6 +1,6 @@
 const Constructor = CanvasLite
 let cLite,
-  canvas = new CanvasLite('canvas')
+  canvas = new CanvasLite('canvas', 900, 300)
 {
   // Mocha tests
   describe('Constructor', function(){
@@ -20,7 +20,7 @@ let cLite,
       }).to.throwError();
     })
     // Valid Constructor Now
-    cLite = new Constructor('canvas')
+    cLite = new Constructor('canvas-x', 1, 1)
     it('should be an instance of Constructor', function () {
       expect(cLite).to.be.a(Constructor)
     })

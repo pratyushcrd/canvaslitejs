@@ -1,7 +1,6 @@
 {
   const Constructor = CanvasLite
   let BasicElement = Constructor.getComponent('BasicElement'),
-    canvas = new CanvasLite('canvas'),
     basicEl = new BasicElement(canvas, null, {
       x: 'number',
       qw: 'notanumber'
