@@ -30,11 +30,11 @@ module.exports = function (CanvasLite) {
 			// Paint function here
 			const attrs = this.attrs
 			ctx.beginPath()
-			ctx.rect(attrs.x, attrs.y, attrs.w, attrs.h)
 			ctx.fillStyle = attrs.fill;
-			ctx.fill()
 			ctx.lineWidth = attrs.strokeWidth;
 			ctx.strokeStyle = attrs.stroke;
+			ctx.rect(attrs.x, attrs.y, attrs.w, attrs.h)
+			ctx.fill()
 			ctx.stroke()
 			ctx.closePath()
 		}
