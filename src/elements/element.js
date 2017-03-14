@@ -1,9 +1,9 @@
-
 // Exporting a function so that basicelement
 // can be register to constructor
 module.exports = function (CanvasLite) {
-	let basicEl = CanvasLite.getComponent('BasicElement', BasicElement)
+	const BasicElement = CanvasLite.getComponent('BasicElement')
 	class Element extends BasicElement{
 
 	}
+	CanvasLite.registerComponent('Element', Element)
 }

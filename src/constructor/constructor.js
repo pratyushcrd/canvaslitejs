@@ -90,6 +90,8 @@ CanvasLite.getComponent = function (key) {
 require('../elements/basicelement')(CanvasLite)
 require('../elements/group')(CanvasLite)
 require('../elements/rootgroup')(CanvasLite)
+require('../elements/element')(CanvasLite)
+require('../elements/rect')(CanvasLite)
 // Getting canvas
 RootGroup = CanvasLite.getComponent('RootGroup')
 // Exporting Library
