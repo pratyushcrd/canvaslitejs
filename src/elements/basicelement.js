@@ -43,7 +43,7 @@ module.exports = function (CanvasLite) {
     }
 
   class BasicElement {
-  	constructor (canvasInstance, group, attrsDef) {
+  	constructor (canvasInstance, group, attrsDef, defValues) {
       let config,
         key = '',
         availableAttrs
@@ -59,6 +59,8 @@ module.exports = function (CanvasLite) {
       this.attrs = {}
       // If group provide add this element to group
       group && group.addChild(this)
+      // Applying default values
+      this.attr(defValues);
   	}
     attr (ob) {
       let element = this,

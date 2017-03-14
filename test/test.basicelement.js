@@ -3,7 +3,11 @@
   let BasicElement = Constructor.getComponent('BasicElement'),
     basicEl = new BasicElement(canvas, null, {
       x: 'number',
-      qw: 'notanumber'
+      qw: 'notanumber',
+      h: 'number'
+    }, {
+      x: 12,
+      h: 31
     })
 
   // Mocha tests
@@ -23,12 +27,17 @@
       }).to.throwError() 
     })
 
-    it('should be have config object', () => {
+    it('should have config object', () => {
       expect(basicEl.config).to.be.a(Object)
     })
 
-    it('should be have attrs object', () => {
+    it('should have attrs object', () => {
       expect(basicEl.attrs).to.be.a(Object)
+    })
+
+    it('should have default attributes', () => {
+      expect(basicEl.attrs.x).to.be(12)
+      expect(basicEl.attrs.h).to.be(31)
     })
 
     it('should register only valid attribute', () => {
