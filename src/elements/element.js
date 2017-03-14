@@ -3,8 +3,8 @@
 module.exports = function (CanvasLite) {
 	const BasicElement = CanvasLite.getComponent('BasicElement')
 	class Element extends BasicElement{
-		constructor (canvas, group) {
-			super(canvas, group)
+		constructor (canvas, group, definedAttrs, defaultValues) {
+			super(canvas, group, definedAttrs, defaultValues)
 		}
 	}
 	CanvasLite.registerComponent('Element', Element)

@@ -58,7 +58,17 @@ class CanvasLite {
   * to draw itself
   **/
   paint () {
+    // Clearing canvas first
+    this.clear()
     this.root.__paint(this.canvasContext)
+  }
+  /**
+   * Function to clear canvas
+   */
+  clear () {
+    let ctx = this.canvasContext
+
+    ctx.clearRect(0, 0, this.width, this.height)
   }
 }
 // Initializing components
