@@ -15,18 +15,18 @@
     })
     it('should add Element', function () {
       bEl = new BasicElement(canvas)
-      group.add(bEl)
+      group.addChild(bEl)
       expect(~group.members.indexOf(bEl)).to.be.ok()
     })
     it('should remove Element', function () {
       bEl = new BasicElement(canvas)
-      group.add(bEl)
-      group.remove(bEl)
+      group.addChild(bEl)
+      group.removeChild(bEl)
       expect(!~group.members.indexOf(bEl)).to.be.ok()
     })
     it('should bring elements to front', function () {
       bEl = new BasicElement(canvas)
-      group.add(bEl)
+      group.addChild(bEl)
       bEl.bringToFront()
       expect(group.members.indexOf(bEl)).to.be(0)
     })
@@ -36,12 +36,12 @@
     })
     it('should tell if element is present in group', function () {
       expect(group.has(bEl)).to.be.ok()
-      group.remove(bEl)
+      group.removeChild(bEl)
       expect(group.has(bEl)).to.not.be.ok()
     })
     it('should remove element from other group before adding to self', function () {
       bEl = new BasicElement(canvas, group)
-      group2.add(bEl)
+      group2.addChild(bEl)
       expect(~group.members.indexOf(bEl)).to.not.be.ok()
     })
   })

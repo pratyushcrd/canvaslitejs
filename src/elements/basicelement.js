@@ -58,7 +58,7 @@ module.exports = function (CanvasLite) {
       // saving blank attrs to object
       this.attrs = {}
       // If group provide add this element to group
-      group && group.add(this)
+      group && group.addChild(this)
   	}
     attr (ob) {
       let element = this,
@@ -81,7 +81,7 @@ module.exports = function (CanvasLite) {
     __setParent (group) {
       let config = this.config
       // Remove self from previous parent
-      config.parent && config.parent.remove(this)
+      config.parent && config.parent.removeChild(this)
       config.parent = group;
       return this
     }

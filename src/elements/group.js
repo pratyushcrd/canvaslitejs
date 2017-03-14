@@ -23,7 +23,7 @@ module.exports = function (CanvasLite) {
     /**
     * Function to add elements to Group
     **/
-    add (el) {
+    addChild (el) {
       if (isEl(el)) {
         this.members.push(el)
         el.__setParent(this)
@@ -33,7 +33,7 @@ module.exports = function (CanvasLite) {
     /**
     * Function to remove elements to Group
     **/
-    remove (el) {
+    removeChild (el) {
       let index = this.members.indexOf(el)
       // If element is found, remove it
       if (~index) {

@@ -8,8 +8,8 @@
     it('should be in canvas instance as root', function () {
       expect(canvas.root).to.be.a(RootGroup)
     })
-    it('should have draw method', function () {
-      expect(canvas.root.draw).to.be.a('function')
+    it('should have paint method', function () {
+      expect(canvas.root.__paint).to.be.a('function')
     })
   })
 }

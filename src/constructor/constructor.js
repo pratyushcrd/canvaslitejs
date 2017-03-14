@@ -54,7 +54,7 @@ class CanvasLite {
     this.root = new RootGroup(this)
 	}
   /**
-  * Function to command all elements 
+  * Function to command all elements
   * to draw itself
   **/
   paint () {
