@@ -9,8 +9,6 @@ module.exports = function (CanvasLite) {
   * to command draw of all elements
   **/
   class RootGroup extends Group {
-    __paint (context) {
-    }
   }
   
   // Registering component and instance method  
